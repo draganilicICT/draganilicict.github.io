@@ -1,0 +1,616 @@
+*{
+margin: 0;
+padding: 0;
+}
+li{
+    font-family: "Kanit";
+}
+h1,h2,h3,h4{
+    font-family: "Smooch Sans";
+}
+p{
+    font-family: "Kanit";
+}
+#zaglavlje{
+	width:100%;
+	height:auto;
+	background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url("../img/slikaslika.jpg") no-repeat;
+	background-size:cover;
+	background-position:70% 30%;
+	padding-bottom: 655px;
+}
+.navigacija{
+    padding-top: 10px;
+    padding-right: 20px;
+    width: 85%;
+    margin: auto;
+    padding-right: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+width: 150px;
+cursor: pointer;
+margin-bottom: 80px;
+}
+.navigacija ul li{
+   list-style: none;
+   display: inline-block;
+   margin: 0px 40px 80px;
+   position: relative;
+}
+.navigacija ul li a{
+   text-decoration: none;
+   font-size: large;
+   color: aliceblue;
+   text-transform: uppercase;
+   
+}
+.navigacija ul li::after{
+content: "";
+height: 3px;
+width: 0;
+position: absolute;
+left: 0;
+bottom: -10px;
+background: aliceblue;
+transition: 1s;
+}
+.navigacija ul li:hover:after{
+width: 100%;
+}
+.kontent{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: aliceblue;
+}
+.kontent h1{
+  font-size: 70px;
+  margin-top: 80px;
+}
+.kontent p{
+ margin: 20px auto;
+ font-weight: 100;
+ line-height: 25px;
+ font-size: 25px;
+}
+#galerijadugme{
+width: 200px;
+text-align: center;
+padding: 15px 0;
+margin: 20px 10px;
+font-weight: bold;
+border: solid aliceblue;
+background: transparent;
+color: aliceblue;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+font-family: "Kanit";  
+}
+span{
+   background: grey;
+   height: 100%;
+   width: 0;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   z-index: -1;
+   transition: 1s;
+}
+button:hover span{
+    width: 100%;
+}
+#sadrzaj1-1{
+    width: 100%;
+	height: 830px;
+	background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url("../img/kucica.jpg") no-repeat;
+    background-position:70% 30%;
+	background-size:cover;
+    padding-bottom: 130px;
+}
+.naslov1{
+    height: 200px;
+    width: 100%;
+}
+.naslov1 h1{
+        width: 100%;
+        position: absolute;
+        padding-top: 100px;
+        text-align: center;
+        color: aliceblue;
+        font-size: 70px;
+}
+.velikiblok{
+   width: 100%;
+   height: 250px;
+   display: flex;
+}
+.prvideo{
+   width: 25%;
+   height: 100%;
+   float: left;
+   margin-left: 260px;
+}
+.drugideo{
+    width: 25%;
+    height: 100%;
+    float: right;
+   margin-left: 60px;
+   margin-right: 60px;
+}
+.trecideo{
+    width: 25%;
+    height: 100%;
+    float: right;
+    margin-right: 60px;
+}
+.velikiblok h3{
+    font-size: 30px;
+    text-align: justify;
+    color: aliceblue;
+}
+.velikiblok p{
+color:aliceblue;
+text-align: justify;
+font-size: 20px;
+}
+.razmak{
+    width: 100%;
+    height: 60px;
+}
+.velikiblokdva{
+    width: 100%;
+    height: 250px;
+    display: flex;
+ }
+ .cetvrtideo{
+    width: 25%;
+    height: 100%;
+    float: left;
+    margin-left: 260px;
+ }
+ .petideo{
+    width: 25%;
+    height: 100%;
+    float: right;
+   margin-left: 60px;
+   margin-right: 60px;
+}
+.sestideo{
+    width: 25%;
+    height: 100%;
+    float: right;
+    margin-right: 60px;
+}
+.velikiblokdva p{
+    color:aliceblue;
+    text-align: justify;
+    font-size: 20px;
+}
+.velikiblokdva h3{
+    font-size: 30px;
+    text-align: justify;
+    color: aliceblue;
+}
+#sadrzaj1-2{
+        width: 100%;
+        height: 950px;
+        background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url(../img/ljudi.jpg) no-repeat;
+        background-size: cover;
+}
+#naslovr{
+   width: 100%;
+   height: 200px;
+}
+#naslovr h1{
+width: 100%;
+        position: absolute;
+        padding-top: 70px;
+        text-align: center;
+        color: aliceblue;
+        font-size: 70px;
+}
+#blokrecenzije{
+    width: 90%;
+    height: 250px;
+    display: flex;
+    margin: auto;
+}
+.prvarecenzija{
+    flex-basis: 44%;
+border-color: aliceblue;
+text-align: left;
+padding: 25px;
+border-style: solid;
+ }
+ .drugarecenzija{
+    flex-basis: 44%;
+    border-color: aliceblue;
+text-align: left;
+padding: 25px;
+border-style: solid;
+ }
+ .trecarecenzija{
+    flex-basis: 44%;
+    border-color: aliceblue;
+    text-align: left;
+    padding: 25px;
+    border-style: solid;
+ }
+ #blokrecenzije p{ 
+    color:aliceblue;
+    text-align: justify;
+    font-size: 20px;
+ }
+ #blokrecenzije h3{
+    color: aliceblue;
+    text-align: justify;
+    font-size: 20px;
+ }
+ #futer{
+    width:100%;
+    background-color:#757a79;
+    display:flex;
+    justify-content:space-around;
+    padding:20px 0px;
+    }
+#futer p{
+    font-size: 20px;
+    color: aliceblue;
+}
+#poslednji-blok p{
+    font-size: 20px;
+    color: aliceblue;
+}
+    .futer-blokovi{
+        width:25%;
+        border:2px solid #fff;
+    }
+    .futer-ikonice{
+        text-align:center;
+        padding:10px 0px;
+    }
+    .futer-ikonice i{
+        color:#fff;
+        font-size:24px;
+    }
+    .futer-text{
+        text-align:center;
+        padding:20px 0px;
+ }
+ #poslednji-blok{
+        width:100%;
+        height: 30px;
+        text-align:center;
+        padding:20px 0px;
+        background-color:#757a79;
+    }
+/* o-nama */
+#zaglavlje2-1{
+    width:100%;
+	height: auto;
+	background: gray;
+}
+#kontent2-1{
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.slikabox{
+    width: 45%;
+    height: 600px;
+}
+.slikabox img{
+   margin-left: 150px;
+   box-shadow: 10px 10px 20px;
+   animation-name: slideLeft;
+   animation-duration: 2s;
+}
+@keyframes slideLeft{
+    from{transform: translateX(50%)}
+}
+.tekstbox1{
+    width: 55%;
+    height: 600px;
+    color: aliceblue;
+    font-size: 30px;
+}
+#slikabox p{
+    text-align: left;
+    color: aliceblue;
+}
+#kontent2-2{
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.tekstbox2{
+    width: 55%;
+    height: 600px;
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 25px;
+}
+.slikabox2{
+    width: 45%;
+    height: 600px;
+}
+.slikabox2 img{
+    margin-left: 150px;
+    box-shadow: 10px 10px 20px;
+    animation-name: slideRight;
+    animation-duration: 2s;
+}
+@keyframes slideRight{
+    from{transform: translateX(50%)}
+}
+/* rezervacije.html */
+#kontent3-1{
+    width: 100%;
+    height: 450px;
+    display: flex;
+}
+.slikabox3-1 img{
+    width: 100%;
+    height: 400px;
+    box-shadow: 10px 10px 20px;
+    margin-left: 20px;
+}
+.slikabox3-2{
+   
+    height: 400px;
+    width: 33%;
+}
+.slikabox3-3 img{
+    height: 400px;
+    width: 90%;
+    box-shadow: -20px 10px 30px;
+    margin-left: 40px;
+}
+.slikabox3-2 p{
+   color: aliceblue;
+   font-size: 22px;
+   text-align: center;
+   margin-left: 50px;
+   padding-top: 70px;
+}
+.kontejner{
+    background-color: #fafafa;
+    margin: 200px;
+    box-shadow:10px 15px 20px rgba( 0, 0, 0, .1);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 420px;
+}
+.kontejner-vreme{
+    background-color: rgba( 0, 0, 0, .95);
+    padding: 50px;
+    outline: 3px solid #5e87b8;
+    outline-offset: -30px;
+    text-align: center;
+}
+.naslovk{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.naslov-dani{
+    color: #5e87b8;
+    font-size: 30px;
+}
+.kontejner p{
+    color: black;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-right: 15px;
+}
+.kontejner-vreme p{
+   color: aliceblue;
+
+}
+.naslov-telefon{
+    color: aliceblue;
+    font-size: 20px;
+} 
+.kontejner-forma{
+color: black;
+ padding: 20px 0;
+ margin: 0 auto;
+}
+form{
+    grid-row-gap: 20px;
+    display: grid;
+}
+.forma-polje{
+   display: flex;
+   justify-content: space-between;
+}
+input,select{
+    padding: 10px 15px;
+}
+/* galerija.html */
+
+#zaglavlje4{
+    width:100%;
+	height: auto;
+	background: gray;
+}
+#kontent4-1{
+    width:80%;
+	height:auto;
+	margin:0px auto;
+}
+#galerijag{
+	width:100%;
+	height:auto;
+	display:flex;
+	justify-content:space-around;
+	padding:10px 0px;
+    background: gray;
+}
+.galerijaslike{
+        width:23%;
+        height:auto;
+}
+.galerijaslike img{
+	width:100%;
+    box-shadow: 10px 10px 20px;
+}
+/* opustiseizabavi.html */
+
+#zaglavlje5-1{
+    width:100%;
+	height:auto;
+	background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url("../img/stomasaza.jpg") no-repeat;
+	background-size:cover;
+	background-position:70% 30%;
+	padding-bottom: 655px;
+}
+#kontent5-1{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-90%);
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    margin-left: 70px;
+    margin-top: 200px;
+}
+#kontent5-1 h1{
+    border: 3px solid aliceblue;
+    font-size: 30px;
+}
+.kontent5-1-1{
+   width: 45%;
+   height: 400px;
+
+}
+.kontent5-1-1 p{
+    text-align: left;
+    font-size: 27px;
+}
+.kontent5-1-1 h4{
+    font-size: 25px;
+    border: 2px solid;
+    padding: 20px;
+    margin-top: 10px;
+
+}
+.kontent5-1-3{
+   width: 45%;
+   height: 400px;
+   margin-left: 70px;
+}
+.kontent5-1-3 img{
+    box-shadow: 10px 10px 20px;
+}
+#kontent5-2{
+    width: 100%;
+	height: 830px;
+	background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url("../img/restoran.jpg") no-repeat;
+    background-position:70% 30%;
+	background-size:cover;
+    padding-bottom: 130px;
+    display: flex;
+}
+#kontent5-3{
+    width: 100%;
+	height: 830px;
+	background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url("../img/konji.jpg") no-repeat;
+    background-position:70% 30%;
+	background-size:cover;
+    padding-bottom: 130px;
+    display: flex;
+}
+.kontent5-2-1 { 
+    width: 45%;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 150px;
+}
+.kontent5-2-3{
+    width: 45%;
+    height: 400px;
+    margin-top: 270px;
+}
+.kontent5-2-1 img{
+    
+   box-shadow: 10px 10px 20px;
+
+}
+.kontent5-2-3 p{
+   
+   font-size: 30px;
+   color: aliceblue;
+}
+.kontent5-2-3 h4{
+    font-size: 25px;
+    border: 2px solid;
+    padding: 20px;
+    margin-top: 10px;
+    color: aliceblue;
+    text-align: center;
+}
+.kontent5-3-1{
+    width: 40%;
+    height: 400px;
+    margin-top: 180px;
+    margin-left: 30px;
+}
+.kontent5-3-3{
+    width: 45%;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+.kontent5-3-3 img{
+    box-shadow: 10px 10px 20px;
+}
+.kontent5-3-1 p{
+   font-size: 30px;
+   color: aliceblue;
+}
+.kontent5-3-1 h4{
+    font-size: 25px;
+    border: 2px solid;
+    padding: 20px;
+    margin-top: 10px;
+    color: aliceblue;
+    text-align: center;
+}
+/* oautoru.html  */
+
+.autorslika{
+   width: 20%;
+   height: 400px;
+   padding-top: 50px;
+   margin-left: 50px;
+}
+.autorslika img{
+   box-shadow: 10px 10px 20px;
+}
+.autortekst{
+   width: 60%;
+   height: 400px;
+   margin-top: 70px;  
+   margin-left: 320px; 
+}
+.autortekst h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    border: 3px solid;
+}
+.autortekst p{
+    text-align: left;
+    font-size: 30px;
+    color: aliceblue;
+    margin-left: 180x;
+    margin-top: 50px;
+}
