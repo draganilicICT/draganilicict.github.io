@@ -587,7 +587,7 @@ input,select{
 /* oautoru.html  */
 
 .autorslika{
-   width: 20%;
+   width: 50%;
    height: 400px;
    padding-top: 50px;
    margin-left: 50px;
@@ -599,7 +599,8 @@ input,select{
    width: 60%;
    height: 400px;
    margin-top: 70px;  
-   margin-left: 320px; 
+   margin-left: 200px;
+   margin-right: 90px; 
 }
 .autortekst h1{
     text-align: center;
@@ -613,4 +614,7 @@ input,select{
     color: aliceblue;
     margin-left: 180x;
     margin-top: 50px;
+}
+.autorslika img{
+    width: 100%;
 }
