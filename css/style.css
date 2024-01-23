@@ -2,26 +2,23 @@
 margin: 0;
 padding: 0;
 }
-li{
+li, p, a{
     font-family: "Kanit";
+    color: aliceblue;
 }
 h1,h2,h3,h4{
     font-family: "Smooch Sans";
-}
-p{
-    font-family: "Kanit";
+    color: aliceblue;
 }
 #zaglavlje{
-	width:100%;
-	height:auto;
+	width: 100%;
+	height: 755px;
 	background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url("../img/slikaslika.jpg") no-repeat;
-	background-size:cover;
-	background-position:70% 30%;
-	padding-bottom: 655px;
+	background-size: cover;
+	background-position: 70% 30%;
 }
 .navigacija{
     padding-top: 10px;
-    padding-right: 20px;
     width: 85%;
     margin: auto;
     padding-right: 95px;
@@ -30,35 +27,34 @@ p{
     justify-content: space-between;
 }
 .logo{
-width: 150px;
-cursor: pointer;
-margin-bottom: 80px;
+    width: 150px;
+    cursor: pointer;
+    margin-bottom: 80px;
 }
 .navigacija ul li{
-   list-style: none;
-   display: inline-block;
-   margin: 0px 40px 80px;
-   position: relative;
+    list-style: none;
+    display: inline-block;
+    margin: 0px 40px 80px;
+    position: relative;
 }
 .navigacija ul li a{
-   text-decoration: none;
-   font-size: large;
-   color: aliceblue;
-   text-transform: uppercase;
+    text-decoration: none;
+    font-size: large;
+    text-transform: uppercase;
    
 }
 .navigacija ul li::after{
-content: "";
-height: 3px;
-width: 0;
-position: absolute;
-left: 0;
-bottom: -10px;
-background: aliceblue;
-transition: 1s;
+    content: "";
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: aliceblue;
+    transition: 1s;
 }
 .navigacija ul li:hover:after{
-width: 100%;
+    width: 100%;
 }
 .kontent{
     width: 100%;
@@ -66,154 +62,110 @@ width: 100%;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    color: aliceblue;
 }
 .kontent h1{
-  font-size: 70px;
-  margin-top: 80px;
+    font-size: 70px;
+    margin-top: 80px;
 }
 .kontent p{
- margin: 20px auto;
- font-weight: 100;
- line-height: 25px;
- font-size: 25px;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 25px;
 }
 #galerijadugme{
-width: 200px;
-text-align: center;
-padding: 15px 0;
-margin: 20px 10px;
-font-weight: bold;
-border: solid aliceblue;
-background: transparent;
-color: aliceblue;
-cursor: pointer;
-position: relative;
-overflow: hidden;
-font-family: "Kanit";  
+    width: 200px;
+    text-align: center;
+    padding: 15px 0;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: solid aliceblue;
+    background: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-family: "Kanit";  
 }
 span{
-   background: grey;
-   height: 100%;
-   width: 0;
-   position: absolute;
-   left: 0;
-   bottom: 0;
-   z-index: -1;
-   transition: 1s;
+    background: grey;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s;
 }
 button:hover span{
     width: 100%;
 }
 #sadrzaj1-1{
     width: 100%;
-	height: 830px;
+	height: 930px;
 	background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url("../img/kucica.jpg") no-repeat;
     background-position:70% 30%;
 	background-size:cover;
-    padding-bottom: 130px;
 }
 .naslov1{
     height: 200px;
     width: 100%;
 }
 .naslov1 h1{
-        width: 100%;
-        position: absolute;
-        padding-top: 100px;
-        text-align: center;
-        color: aliceblue;
-        font-size: 70px;
+     width: 100%;
+     position: absolute;
+     padding-top: 60px;
+     text-align: center;
+     font-size: 70px;
 }
 .velikiblok{
-   width: 100%;
-   height: 250px;
-   display: flex;
+    width: 100%;
+    height: 250px;
+    display: flex;
 }
-.prvideo{
-   width: 25%;
-   height: 100%;
-   float: left;
-   margin-left: 260px;
-}
-.drugideo{
+.deoTekst{
     width: 25%;
     height: 100%;
-    float: right;
-   margin-left: 60px;
-   margin-right: 60px;
-}
-.trecideo{
-    width: 25%;
-    height: 100%;
-    float: right;
-    margin-right: 60px;
+    margin-left: 150px;
 }
 .velikiblok h3{
     font-size: 30px;
     text-align: justify;
-    color: aliceblue;
 }
 .velikiblok p{
-color:aliceblue;
-text-align: justify;
-font-size: 20px;
-}
-.razmak{
-    width: 100%;
-    height: 60px;
+    text-align: justify;
+    font-size: 20px;
 }
 .velikiblokdva{
     width: 100%;
     height: 250px;
     display: flex;
+    padding-top: 100px;
  }
- .cetvrtideo{
-    width: 25%;
-    height: 100%;
-    float: left;
-    margin-left: 260px;
- }
- .petideo{
-    width: 25%;
-    height: 100%;
-    float: right;
-   margin-left: 60px;
-   margin-right: 60px;
-}
-.sestideo{
-    width: 25%;
-    height: 100%;
-    float: right;
-    margin-right: 60px;
-}
 .velikiblokdva p{
-    color:aliceblue;
     text-align: justify;
     font-size: 20px;
 }
 .velikiblokdva h3{
     font-size: 30px;
     text-align: justify;
-    color: aliceblue;
 }
 #sadrzaj1-2{
-        width: 100%;
-        height: 950px;
-        background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url(../img/ljudi.jpg) no-repeat;
-        background-size: cover;
+    width: 100%;
+    height: 950px;
+    background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url(../img/ljudi.jpg) no-repeat;
+    background-size: cover;
 }
 #naslovr{
-   width: 100%;
-   height: 200px;
+    width: 100%;
+    height: 200px;
 }
 #naslovr h1{
-width: 100%;
-        position: absolute;
-        padding-top: 70px;
-        text-align: center;
-        color: aliceblue;
-        font-size: 70px;
+    width: 100%;
+    position: absolute;
+    padding-top: 70px;
+    text-align: center;
+    font-size: 70px;
 }
 #blokrecenzije{
     width: 90%;
@@ -221,21 +173,7 @@ width: 100%;
     display: flex;
     margin: auto;
 }
-.prvarecenzija{
-    flex-basis: 44%;
-border-color: aliceblue;
-text-align: left;
-padding: 25px;
-border-style: solid;
- }
- .drugarecenzija{
-    flex-basis: 44%;
-    border-color: aliceblue;
-text-align: left;
-padding: 25px;
-border-style: solid;
- }
- .trecarecenzija{
+.prverecenzije{
     flex-basis: 44%;
     border-color: aliceblue;
     text-align: left;
@@ -243,55 +181,52 @@ border-style: solid;
     border-style: solid;
  }
  #blokrecenzije p{ 
-    color:aliceblue;
     text-align: justify;
     font-size: 20px;
  }
  #blokrecenzije h3{
-    color: aliceblue;
     text-align: justify;
     font-size: 20px;
  }
+ /* futer */
  #futer{
     width:100%;
     background-color:#757a79;
     display:flex;
     justify-content:space-around;
     padding:20px 0px;
-    }
+}
 #futer p{
     font-size: 20px;
-    color: aliceblue;
 }
 #poslednji-blok p{
     font-size: 20px;
-    color: aliceblue;
 }
     .futer-blokovi{
-        width:25%;
-        border:2px solid #fff;
+    width:25%;
+    border:2px solid #fff;
     }
     .futer-ikonice{
-        text-align:center;
-        padding:10px 0px;
+    text-align:center;
+    padding:10px 0px;
     }
     .futer-ikonice i{
-        color:#fff;
-        font-size:24px;
+    color:#fff;
+    font-size:24px;
     }
     .futer-text{
-        text-align:center;
-        padding:20px 0px;
+    text-align:center;
+    padding:20px 0px;
  }
  #poslednji-blok{
-        width:100%;
-        height: 30px;
-        text-align:center;
-        padding:20px 0px;
-        background-color:#757a79;
+    width:100%;
+    height: 30px;
+    text-align:center;
+    padding:20px 0px;
+    background-color:#757a79;
     }
 /* o-nama */
-#zaglavlje2-1{
+#onStranica{
     width:100%;
 	height: auto;
 	background: gray;
@@ -306,10 +241,11 @@ border-style: solid;
     height: 600px;
 }
 .slikabox img{
-   margin-left: 150px;
-   box-shadow: 10px 10px 20px;
-   animation-name: slideLeft;
-   animation-duration: 2s;
+    width: 50%;
+    margin-left: 150px;
+    box-shadow: 10px 10px 20px;
+    animation-name: slideLeft;
+    animation-duration: 2s;
 }
 @keyframes slideLeft{
     from{transform: translateX(50%)}
@@ -322,7 +258,6 @@ border-style: solid;
 }
 #slikabox p{
     text-align: left;
-    color: aliceblue;
 }
 #kontent2-2{
     width: 100%;
@@ -341,6 +276,7 @@ border-style: solid;
     height: 600px;
 }
 .slikabox2 img{
+    width: 50%;
     margin-left: 150px;
     box-shadow: 10px 10px 20px;
     animation-name: slideRight;
@@ -350,6 +286,9 @@ border-style: solid;
     from{transform: translateX(50%)}
 }
 /* rezervacije.html */
+#zaglavlje2-1{
+    background-color: gray;
+}
 #kontent3-1{
     width: 100%;
     height: 450px;
@@ -362,7 +301,6 @@ border-style: solid;
     margin-left: 20px;
 }
 .slikabox3-2{
-   
     height: 400px;
     width: 33%;
 }
@@ -373,11 +311,10 @@ border-style: solid;
     margin-left: 40px;
 }
 .slikabox3-2 p{
-   color: aliceblue;
-   font-size: 22px;
-   text-align: center;
-   margin-left: 50px;
-   padding-top: 70px;
+    font-size: 22px;
+    text-align: center;
+    margin-left: 50px;
+    padding-top: 70px;
 }
 .kontejner{
     background-color: #fafafa;
@@ -410,25 +347,24 @@ border-style: solid;
     margin-right: 15px;
 }
 .kontejner-vreme p{
-   color: aliceblue;
-
+    color: aliceblue;
 }
 .naslov-telefon{
     color: aliceblue;
     font-size: 20px;
 } 
 .kontejner-forma{
-color: black;
- padding: 20px 0;
- margin: 0 auto;
+    color: black;
+    padding: 20px 0;
+    margin: 0 auto;
 }
 form{
     grid-row-gap: 20px;
     display: grid;
 }
 .forma-polje{
-   display: flex;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 input,select{
     padding: 10px 15px;
@@ -454,12 +390,15 @@ input,select{
     background: gray;
 }
 .galerijaslike{
-        width:23%;
-        height:auto;
+    width:23%;
+    height:auto;
 }
 .galerijaslike img{
-	width:100%;
     box-shadow: 10px 10px 20px;
+}
+#galerijag img{
+    width: 100%;
+    height: 85%;
 }
 /* opustiseizabavi.html */
 
@@ -487,8 +426,8 @@ input,select{
     font-size: 30px;
 }
 .kontent5-1-1{
-   width: 45%;
-   height: 400px;
+    width: 45%;
+    height: 400px;
 
 }
 .kontent5-1-1 p{
@@ -500,14 +439,14 @@ input,select{
     border: 2px solid;
     padding: 20px;
     margin-top: 10px;
-
 }
 .kontent5-1-3{
-   width: 45%;
-   height: 400px;
-   margin-left: 70px;
+    width: 45%;
+    height: 400px;
+    margin-left: 70px;
 }
 .kontent5-1-3 img{
+    width: 100%;
     box-shadow: 10px 10px 20px;
 }
 #kontent5-2{
@@ -538,23 +477,21 @@ input,select{
     width: 45%;
     height: 400px;
     margin-top: 270px;
+    margin-right: 150px;
 }
 .kontent5-2-1 img{
-    
-   box-shadow: 10px 10px 20px;
+    width: 60%;
+    box-shadow: 10px 10px 20px;
 
 }
 .kontent5-2-3 p{
-   
-   font-size: 30px;
-   color: aliceblue;
+    font-size: 30px;
 }
 .kontent5-2-3 h4{
     font-size: 25px;
     border: 2px solid;
     padding: 20px;
     margin-top: 10px;
-    color: aliceblue;
     text-align: center;
 }
 .kontent5-3-1{
@@ -570,51 +507,46 @@ input,select{
     margin-left: 80px;
 }
 .kontent5-3-3 img{
+    width: 100%;
     box-shadow: 10px 10px 20px;
 }
 .kontent5-3-1 p{
-   font-size: 30px;
-   color: aliceblue;
+    font-size: 30px;
 }
 .kontent5-3-1 h4{
     font-size: 25px;
     border: 2px solid;
     padding: 20px;
     margin-top: 10px;
-    color: aliceblue;
     text-align: center;
 }
 /* oautoru.html  */
 
 .autorslika{
-   width: 50%;
-   height: 400px;
-   padding-top: 50px;
-   margin-left: 50px;
+    width: 50%;
+    height: 400px;
+    padding-top: 50px;
+    margin-left: 50px;
 }
 .autorslika img{
-   box-shadow: 10px 10px 20px;
+    box-shadow: 10px 10px 20px;
+    width: 100%;
 }
 .autortekst{
-   width: 60%;
-   height: 400px;
-   margin-top: 70px;  
-   margin-left: 200px;
-   margin-right: 90px; 
+    width: 60%;
+    height: 400px;
+    margin-top: 70px;  
+    margin-left: 200px;
+    margin-right: 90px; 
 }
 .autortekst h1{
     text-align: center;
-    color: aliceblue;
     font-size: 50px;
     border: 3px solid;
 }
 .autortekst p{
     text-align: left;
     font-size: 30px;
-    color: aliceblue;
     margin-left: 180x;
     margin-top: 50px;
-}
-.autorslika img{
-    width: 100%;
 }
