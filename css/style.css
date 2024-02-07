@@ -255,9 +255,11 @@ button:hover span{
     height: 600px;
     color: aliceblue;
     font-size: 30px;
+    padding-top: 20px;
 }
 #slikabox p{
     text-align: left;
+    padding-top: 50px;
 }
 #kontent2-2{
     width: 100%;
@@ -269,7 +271,8 @@ button:hover span{
     height: 600px;
     color: aliceblue;
     font-size: 30px;
-    margin-left: 25px;
+    margin-left: 35px;
+    padding-top: 20px;
 }
 .slikabox2{
     width: 45%;
